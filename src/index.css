@@ -1,0 +1,622 @@
+/* ================================================================ header =============================================================================
+/* Header Styling */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #f3d2ec, #f0eacce8);
+  border-bottom: 2px solid #eaeaea;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.2s ease-in-out;
+}
+
+.logo-link:hover {
+  transform: scale(1.05); /* Sedikit memperbesar saat dihover */
+}
+
+.logo-image {
+  width: 600px; /* Ukuran logo */
+  height: auto;
+  margin-right: 12px;
+  border-radius: 8px; /* Sedikit lengkungan untuk estetika */
+}
+.icon {
+color: #070707;
+width: 40px; /* Ukuran logo */
+height: auto;
+
+}
+
+.title-header {
+  font-size: 2em;
+  font-weight: 600;
+  color: #333333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s;
+}
+
+.title-header:hover {
+  color: #ec2222; /* Warna saat dihover */
+}
+.header-link a {
+text-decoration: none;
+color: #0f0f0f;
+font-size: 2.2em; /* Ukuran teks lebih besar */
+font-weight: 600;
+transition: color 0.3s;
+}
+
+/* Responsif Header */
+@media (max-width: 768px) {
+  .header {
+      padding: 15px;
+  }
+  .logo-image {
+      width: 40px;
+      margin-right: 8px;
+  }
+  .title-header {
+      font-size: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .title-header {
+      font-size: 1.3em;
+  }
+}
+
+/* Style untuk kolom pencarian */
+.search-container {
+display: flex;
+align-items: center;
+gap: 5px;
+margin-left: 20px;
+}
+
+.search-input {
+padding: 8px 12px;
+border-radius: 4px;
+border: 1px solid #ddd;
+font-size: 20px;
+width: 500px; /* Atur lebar kolom pencarian */
+height: 50px;
+}
+
+.search-icon {
+color: #0e0d0d;
+cursor: pointer;
+width: 40px; /* Ukuran logo */
+height: auto;
+
+
+}
+
+/* Style untuk kolom pengurutan */
+.sort-container {
+display: flex;
+align-items: center;
+margin-left: 15px;
+
+}
+
+.sort-select {
+padding: 8px 12px;
+font-size: 20px;
+border-radius: 4px;
+border: 1px solid #ddd;
+cursor: pointer;
+background-color: #fff;
+color: #0a0a0a;
+width: 200px; /* Atur lebar kolom pencarian */
+height: 50px;
+
+}
+
+/* Style untuk ikon pengurutan (naik dan turun) */
+.sort-select option {
+padding-right: 20px;
+}
+
+.sort-select option::after {
+font-size: 14px;
+color: #666;
+padding-left: 5px;
+}
+
+.arrow-up, .arrow-down {
+margin-left: 5px;
+color: #666;
+vertical-align: middle;
+}
+
+/* ============================================================================================================================================= */ */
+.header-link a {
+text-decoration: none;
+color: #0f0f0f;
+font-size: 4.2em; /* Ukuran teks lebih besar */
+font-weight: 600;
+transition: color 0.3s;
+}
+
+.header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px;
+background: linear-gradient(135deg, #f3d2ec, #f0eacce8);
+color: #fff;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.title-header {
+font-size: 2rem;
+font-weight: bold;
+font-family: Arial, sans-serif;
+color: #FFFFFF;
+}
+.navigasi {
+display: contents;
+}
+.container-link {
+display: flex;
+gap: 20px;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+.header-link a {
+text-decoration: none;
+color: #080606;
+font-weight: 900;
+padding: 10px 15px;
+border-radius: 5px;
+transition: background-color 0.3s ease, color 0.3s ease;
+}
+.header-link a:hover {
+background-color: rgba(255, 255, 255, 0.2);
+color: #e003e0;
+}
+
+@media (max-width: 768px) {
+.header {
+flex-direction: column;
+align-items: flex-start;
+}
+
+.title-header {
+font-size: 1.5rem;
+margin-bottom: 10px;
+}
+
+.container-link {
+flex-direction: column;
+gap: 10px;
+}
+}
+.container-page{
+height: 100vh;
+}
+/* ========================================================== footer ===================================================================== */
+/* Kontainer utama footer */
+.footer {
+width: 100%; 
+/* Lebar penuh */
+background: linear-gradient(135deg, #f3d2ec, #f0eacce8);
+padding: 20px 0;
+border-top: 1px solid #e7e7e7;
+font-size: 2rem;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative; /* Pastikan footer tetap berada di bawah konten utama */
+bottom: 0;
+left: 0;
+right: 0;
+}
+
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 15px;
+width: 100%;
+} 
+
+.row {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+} 
+
+.col-md-12 {
+flex: 0 0 100%;
+max-width: 100%;
+} 
+
+.text-center {
+text-align: center;
+}
+
+.copyright {
+font-size: 1.5rem;
+color: #0f0f0f;
+margin: 0;
+}
+/* CSS tambahan untuk layout utama */
+body, html {
+height: 100%;
+margin: 0;
+display: flex;
+flex-direction: column;
+}
+
+.container-page {
+flex: 1;
+}
+
+/* ========================================================== footer ===================================================================== */
+
+/* ========================================================== PRODUCT ===================================================================== */
+.title {
+font-size: 150px; /* Ukuran font yang lebih besar */
+font-weight: bold; /* Membuat teks menjadi tebal */
+text-align: center; /* Menyelaraskan teks di tengah */
+margin: 20px 0; /* Memberikan jarak atas dan bawah */
+color: #0f0f0f; /* Mengubah warna teks, bisa disesuaikan */
+}
+
+.add-button {
+color: rgb(15, 15, 15);
+padding: 10px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+display: block;
+margin: 0 auto 20px auto;
+font-size: 30px; /* Ukuran font yang lebih besar */
+background: linear-gradient(135deg, #f3d2ec, #f0eacce8);
+font-weight: bold; /* Membuat teks menjadi tebal */
+
+}
+
+.add-button:hover {
+background: linear-gradient(135deg, #f3d2ec, #f0eacce8);
+}
+
+
+.product-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+padding: 20px;
+}
+
+.product-card {
+border: 1px solid #ddd;
+border-radius: 8px;
+padding: 15px;
+width: 600px;
+text-align: center;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+background: linear-gradient(135deg, #f3d2ec, #f0eacce8);
+
+}
+.product-card:hover {
+background-color:linear-gradient(135deg, #ec07bb, #f0eacce8);
+/* Ganti dengan warna pink muda saat hover */
+}
+.product-image {
+width: 70%;
+border-radius: 4px;
+height: 70%;
+}
+
+.product-name,
+.product-price {
+margin: 10px 0;
+font-size: 0,5em;
+color: #0f0f0f;
+}
+
+
+.update-button,
+.delete-button {
+background-color: #f7a067;
+color: white;
+padding: 5px 10px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+margin: 5px;
+font-size: 60%;  
+}
+
+.update-button:hover {
+background-color: #921302;
+}
+
+.delete-button {
+background-color: #f7a067;
+}
+
+.delete-button:hover {
+background-color: #c9302c;
+}
+
+/* Styling untuk form */
+.form-container {
+position: fixed; /* Menempatkan elemen dalam posisi tetap */
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+display: flex; /* Menggunakan flexbox */
+align-items: center; /* Menyusun secara vertikal di tengah */
+justify-content: center; /* Menyusun secara horizontal di tengah */
+background: linear-gradient(135deg, #f3d2ec, #f0eacce8); /* Latar belakang gradasi */
+}
+
+.form {
+background-color: white; /* Warna latar belakang form */
+padding: 20px; /* Ruang dalam untuk isi form */
+border-radius: 8px; /* Sudut yang membulat */
+width: 360px; /* Lebar form */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan */
+}
+
+/* Styling untuk label dan input */
+.form label {
+display: block; /* Menampilkan label sebagai blok */
+margin: 10px 0 5px; /* Jarak antar label dan input */
+font-weight: bold; /* Menebalkan teks */
+color: #a36f6f; /* Warna teks label */
+}
+
+.form-input {
+width: 94%; /* Lebar input */
+padding: 10px; /* Ruang dalam untuk input */
+margin-bottom: 15px; /* Jarak antar input */
+border-radius: 4px; /* Sudut yang membulat */
+border: 1px solid #ddd; /* Batas input */
+transition: border-color 0.3s; /* Transisi untuk perubahan batas */
+}
+
+.form-input:focus {
+border-color: #f17e12; /* Warna batas saat fokus */
+outline: none; /* Menghilangkan outline default */
+}
+
+/* Styling untuk tombol dalam form */
+.submit-button,
+.cancel-button {
+background-color: #f3c192; /* Warna latar belakang tombol */
+color: white; /* Warna teks tombol */
+padding: 10px; /* Ruang dalam untuk tombol */
+border: none; /* Tanpa batas */
+border-radius: 5px; /* Sudut yang membulat untuk tombol */
+cursor: pointer; /* Kursor tangan saat hover */
+width: 100%; /* Lebar tombol penuh */
+margin-top: 10px; /* Jarak antar tombol */
+transition: background-color 0.3s; /* Transisi untuk perubahan warna */
+}
+
+.submit-button:hover {
+background-color: #f17e12; /* Warna saat hover */
+}
+
+.cancel-button {
+background-color: #d9534f; /* Warna latar belakang tombol cancel */
+}
+
+.cancel-button:hover {
+background-color: #c9302c; /* Warna saat hover untuk tombol cancel */
+}f
+
+/* =================================================== PROFILE ================================================================================ */
+.container-page {
+text-align: center;
+padding: 20px;
+font-size: 2em;
+color: #0e0d0d;
+}
+
+.auth-card {
+max-width: 1900px;
+margin: 0 auto;
+padding: 20px;
+background: linear-gradient(135deg, #f3d2ec, #f0eacce8);
+border-radius: 10px;
+box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.auth-form label {
+display: block;
+margin: 15px 0 5px;
+font-size: 1em;
+color: #4a4a4a;
+text-align: center;
+}
+
+.auth-form input {
+width: 30%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-size: 1em;
+}
+
+.auth-button {
+width: 100%;
+padding: 10px;
+margin-top: 20px;
+font-size: 1em;
+background: #67c867;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+.auth-button:hover {
+background-color: #55a755;
+}
+
+.toggle-text {
+margin-top: 15px;
+font-size: 0.9em;
+color: #555;
+}
+
+.toggle-button {
+background: none;
+color: #3498db;
+border: none;
+cursor: pointer;
+font-size: 1em;
+text-decoration: underline;
+}
+/* =================================================== HOME ================================================================================ */
+.container-page {
+text-align: center;
+padding: 20px;
+background-color: #f9f9f9; /* Warna latar belakang */
+}
+
+.home-title {
+font-size: 2.5em; /* Ukuran font untuk judul */
+color: #a36f6f; /* Warna judul */
+}
+
+.home-description {
+font-size: 1.2em; /* Ukuran font untuk deskripsi */
+color: #1d1c1c; /* Warna teks deskripsi */
+margin: 20px 0; /* Margin di atas dan bawah deskripsi */
+}
+
+.home-image {
+margin: 50px ; /* Margin di atas dan bawah gambar */
+
+}
+
+.home-bloom-image {
+max-width: 0%; /* Gambar responsif */
+height: auto; /* Jaga agar proporsional */
+border-radius: 10px; /* Sudut gambar yang membulat */
+}
+
+.home-buttons {
+font-size: 1.2em; /* Ukuran font untuk deskripsi */
+margin-top: 30px; /* Margin di atas tombol */
+}
+
+.view-products-button,
+.contact-us-button {
+background-color: #f3c192; /* Warna latar belakang tombol */
+color: white; /* Warna teks tombol */
+padding: 10px 20px; /* Padding untuk tombol */
+border: none; /* Menghilangkan border */
+border-radius: 5px; /* Sudut membulat pada tombol */
+cursor: pointer; /* Pointer saat hover */
+margin: 5px; /* Margin antara tombol */
+font-size: 1.2em; /* Ukuran font untuk deskripsi */
+font-size: bold;
+
+}
+
+.view-products-button:hover,
+.contact-us-button:hover {
+background-color: #f17e12; /* Warna saat hover */
+}
+/* ================================================================= ABOUT ================================================================================== */
+/* Kontainer utama untuk halaman About */
+.container-page {
+text-align: center;
+padding: 20px;
+font-size: 3.5em; /* Ukuran font untuk judul */
+color: #a36f6f; /* Warna judul */
+}
+
+/* Kontainer untuk teks dan gambar About */
+.about-content {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 30px;
+flex-wrap: wrap;
+margin-top: 20px;
+}
+
+/* Pengaturan teks pada bagian About */
+.about-text {
+max-width: 600px;
+text-align: left;
+font-size: 0.5em; /* Ukuran font konten teks */
+color: #0c0b0b; /* Warna teks konten */
+}
+
+/* Kontainer untuk tombol navigasi */
+.navigation-buttons {
+display: flex;
+justify-content: center;
+gap: 15px;
+margin-top: 20px;
+}
+
+/* Gaya untuk tombol navigasi */
+.nav-button {
+font-size: 40px; /* Ukuran font untuk tombol */
+color: #a36f6f; /* Warna teks tombol */
+padding: 10px 15px;
+background: linear-gradient(135deg, #fcb1ac, #f0eacce8);
+color: #080808;
+border: none;
+border-radius: 5px;
+text-decoration: none;
+transition: background-color 0.3s, transform 0.3s;
+width: 200px; /* Menetapkan lebar tetap untuk tombol */
+text-align: center; /* Memastikan teks tombol terpusat */
+}
+
+.nav-button:hover {
+background-color: #e40606;
+transform: scale(1.05); /* Efek zoom saat di-hover */
+}
+
+/* Pengaturan gambar pada halaman About */
+.about-image {
+max-width: 1000px;
+flex-shrink: 0;
+}
+
+.image {
+width: 100%;
+border-radius: 10px;
+box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Efek bayangan pada gambar */
+transition: transform 0.3s;
+}
+
+/* Kontainer untuk konten tambahan di bawah tombol */
+.additional-content {
+text-align: center;
+margin-top: 40px; /* Margin atas untuk pemisahan dari konten di atas */
+}
+
+.additional-content h2 {
+font-size: 2em; /* Ukuran font untuk subjudul */
+color: #a36f6f; /* Warna subjudul */
+}
+
+.additional-content p {
+font-size: 1em; /* Ukuran font untuk teks konten tambahan */
+color: #0c0b0b; /* Warna teks konten tambahan */
+}
